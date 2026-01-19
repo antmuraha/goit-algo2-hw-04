@@ -9,6 +9,7 @@ dependencies = [
     "networkx>=3.6.1",
     "typer>=0.14.0",
     "rich>=13.0.0",
+    "pygtrie>=2.5.0",
 ]
 
 [dependency-groups]

@@ -2,9 +2,9 @@
 
 This repository contains solutions for two algorithm tasks:
 
--   applying the maximum flow algorithm to model logistics networks, analyzing optimal routes of commodity flows and identifying network constraints.
+- applying the maximum flow algorithm to model logistics networks, analyzing optimal routes of commodity flows and identifying network constraints.
 
--   expanding the functionality of the Trie tree, see how this data structure helps solve real-world text search and analysis problems.
+- expanding the functionality of the Trie tree, see how this data structure helps solve real-world text search and analysis problems.
 
 ## Task 1. Application of the maximum flow algorithm for goods logistics
 
@@ -26,4 +26,15 @@ cat task_1/logistics_network_simulator/data.py
 
 [Task 1. Result](./task_1/README.md)
 
-## Task 2.
+## Task 2. Extending the prefix tree functionality
+
+Implementation of two additional methods for the Trie class:
+
+- count_words_with_suffix(pattern) - to count the number of words ending with a given pattern;
+
+- has_prefix(prefix) - to check for the presence of words with a given prefix.
+
+```bash
+# Run task 2
+python task_2/extend_trie.py
+```

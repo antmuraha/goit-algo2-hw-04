@@ -106,7 +106,7 @@ Rendering basic visualization...
 ```
 
 ```
-network>> draw -load
+network>> draw load
 Rendering load visualization...
 ✓ Visualization complete
 ```

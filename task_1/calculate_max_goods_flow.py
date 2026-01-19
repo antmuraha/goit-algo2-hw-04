@@ -63,7 +63,11 @@ if __name__ == "__main__":
             for warehouse in G.successors(t):
                 if warehouse.startswith("Warehouse"):
                     flow_to_warehouse = network_result["flow_dict"][t][warehouse]
-                    flow_to_store = network_result["flow_dict"][warehouse][s] if s in network_result["flow_dict"][warehouse] else 0
+                    flow_to_store = (
+                        network_result["flow_dict"][warehouse][s]
+                        if s in network_result["flow_dict"][warehouse]
+                        else 0
+                    )
                     # The actual flow from t to s via this warehouse is the min of the two
                     actual_flow += min(flow_to_warehouse, flow_to_store)
             print(f"{t:<15} {s:<15} {actual_flow:<20}")
